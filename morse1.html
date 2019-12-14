@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Morse Code</title>
+    <link rel="stylesheet" href="morse1.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="margin:10px">Choose the correct option</h1>
+        <p style="margin:10px">Please select the appropriate option.Now The image is provided you have to select it's value</p>
+        <div class="container-2" style="color:black" id="container2">
+            <h1 style="margin-top:30px">
+                    <audio controls>
+                            <source src="morsecode/B_morse_code.ogg" type="audio/ogg">
+                          Your browser does not support the audio element.
+                          </audio>
+            </h1>
+            <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                Which one of these is equivalent MORSE Value for
+                <img src="morsecode/B_1.JPG" alt="" width="100px" height="30px" style="margin: 5px;border-radius: 20px;"> ?
+            </h1>
+            <p id="question"></p>
+            <div id="button" style="text-align:center;">
+                <button id="btn0" onclick="correctanswer(this.id)"><span id="choice0">A). B</span></button>
+                <button id="btn1" onclick="correctanswer(this.id)"><span id="choice0">B). C</span></button>
+                <button id="btn2" onclick="correctanswer(this.id)"><span id="choice0">C). D</span></button>
+                <button id="btn3" onclick="correctanswer(this.id)"><span id="choice0">D). A</span></button>
+
+            </div>
+            <div id="check" style="text-align:center;">
+                <input type="submit" onclick="check()" value="check">
+            </div>
+            <div id="continue">
+                <input type="submit" onclick="location.href='morse2.html'" value="continue">
+            </div>
+            <!-- <div id="forum">
+                    <input type="submit" onclick="" value="forum">
+            </div> -->
+        </div>
+        <div class="container-3">
+            <h1 style="margin:10px">Progress</h1>
+            <p id="progress" style="margin:10px"> question 2 of 10</p>
+            <div class="progress-bar">
+            </div>
+
+        </div>
+    </div>
+    <script src="morse1.js"></script>
+    <!-- <script src="quiz_controller.js"></script>
+    <script src="question.js"></script>
+    
+     -->
+</body>
+</html>

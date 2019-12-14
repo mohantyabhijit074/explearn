@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Colours in spanish</title>
+    <link rel="stylesheet" href="colour1.css">
+</head>
+<body>
+    <div class="container">
+        <h2 style="margin:10px">Fill in the blanks with appropriate colour name {
+            Complete los espacios en blanco con el nombre de color apropiado}</h2>
+        <div class="container-2" style="color:black" id="container2">
+            <!-- <h1 style="margin:10px">
+                    <audio controls>
+                            <source src="morsecode/A_morse_code.ogg" type="audio/ogg">
+                          Your browser does not support the audio element.
+                          </audio>
+            </h1> -->
+            <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">"GREEN COLOUR"</h1>
+            <img src="morsecode/leaf.jpg" alt="" width="180px" style="border-radius: 10%" class="green">
+            <p id="question"></p>
+            <div id="button" style="text-align:center;">
+                <p style="font-family: sans-serif;margin:20px;padding-right: 20px;">Fill the answer here</p>
+                <input type="text" name="answer" id="answer">
+            </div>
+            <div id="check" style="text-align:center;">
+                <input type="submit" onclick="check()" value="check">
+            </div>
+            <div id="continue">
+                <input type="submit" onclick="location.href='index.php'" value="continue {Hacer continuación}">
+            </div>
+            <!-- <div id="forum">
+                    <input type="submit" onclick="" value="forum">
+            </div> -->
+        </div>
+        <div class="container-3">
+            <h1 style="margin:10px">Progress</h1>
+            <p id="progress" style="margin:10px"> question 2 of 10</p>
+            <div class="progress-bar">
+            </div>
+
+        </div>
+    </div>
+    <script src="colour1.js"></script>
+    <!-- <script src="quiz_controller.js"></script>
+    <script src="question.js"></script>
+    
+     -->
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Colours in spanish</title>
+    <link rel="stylesheet" href="colour.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="margin:10px">Choose the correct colour {elige los colores correctos}</h1>
+        <div class="container-2" style="color:black" id="container2">
+            <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                Which one of these is "COLOUR BLUE" {cuál de estos es de color azul}
+            </h1>
+            <p id="question"></p>
+            <div id="button" style="text-align:center;">
+                <button id="btn0" onclick="correctanswer(this.id)"><span id="choice0">ROJO</span></button>
+                <button id="btn1" onclick="correctanswer(this.id)"><span id="choice1">AZUL</span></button>
+                <button id="btn2" onclick="correctanswer(this.id)"><span id="choice2" style="color: black;">VERDE</span></button>
+                <button id="btn3" onclick="correctanswer(this.id)"><span id="choice3" style="color: black;">ROSADO</span></button>
+            </div>
+            <div id="check" style="text-align:center;">
+                <input type="submit" onclick="check()" value="check">
+            </div>
+            <div id="continue">
+                <input type="submit" onclick="location.href='colour1.html'" value="continue {Hacer continuación}">
+            </div>
+            <!-- <div id="forum">
+                    <input type="submit" onclick="" value="forum">
+            </div> -->
+        </div>
+        <div class="container-3">
+            <h1 style="margin:10px">Progress</h1>
+            <p id="progress" style="margin:10px"> question 1 of 10</p>
+            <div class="progress-bar">
+            </div>
+
+        </div>
+    </div>
+    <script src="colour.js"></script>
+</body>
+</html>
